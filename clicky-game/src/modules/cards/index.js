@@ -9,13 +9,18 @@ class Cards extends Component {
         style={{
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-between"
+          justifyContent: "space-between",
+          padding: "5%"
         }}
       >
         {this.props.characters.map(character => (
           <div
             className="card"
-            style={{ width: "80px", marginBottom: "2%" }}
+            style={{
+              width: "80px",
+              marginBottom: "2%",
+              border: "solid 1px magenta"
+            }}
             value={character.id}
             key={character.id}
             onClick={() => this.props.grabId(character.id)}

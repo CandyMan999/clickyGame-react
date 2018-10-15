@@ -2,7 +2,10 @@ import React, { Component } from "react";
 
 const Header = props => {
   return (
-    <nav className="navbar navbar-light bg-light">
+    <nav
+      style={{ color: "mediumaquamarine", backgroundColor: "red !important" }}
+      className="navbar font-effect-shadow-multiple "
+    >
       Score:{" "}
       <span className="badge badge-pill badge-secondary">{props.score}</span>
       TopScore:{" "}

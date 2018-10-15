@@ -17,7 +17,11 @@ class App extends Component {
     if (this.state.clickedId.includes(id)) {
       console.log("you have already guessed me game over");
       if (this.state.score > this.state.topScore) {
-        return this.setState({ topScore: this.state.score });
+        return this.setState({
+          topScore: this.state.score,
+          clickedId: [],
+          score: 0
+        });
       }
       return this.setState({ clickedId: [], score: 0 });
     } else {
